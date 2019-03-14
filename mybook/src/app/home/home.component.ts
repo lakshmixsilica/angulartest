@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import $ from 'jquery';
 
 
 @Component({
@@ -8,13 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    $(document).ready(function(){
+      $('.modal').modal();
+    });
+   }
 
   ngOnInit() {
   }
  
  
 }
+
+
 
 
 
