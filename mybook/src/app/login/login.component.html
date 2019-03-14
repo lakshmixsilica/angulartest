@@ -1,0 +1,23 @@
+<div class="row">
+<div class="col-md-8 offset-2">
+  <div class="card">
+    <div class="sm-jumbotron center-align">
+         <h2>Login</h2>
+    </div>
+   <form class="col-md-4 white" #loginForm="ngForm" *ngIf="!isLoginDiv" (ngSubmit)="Submit(Email)">
+    <div class="row">
+      <div class="input-field col-md-1">
+      <input type="text" id="Email" name="Email"  [(ngModel)]="Email">
+      <label>Email</label>
+      </div>
+    </div>
+    <div class="row">
+        <div class="input-field col-md-2">
+          <button class="btn-large btn-submit" [disabled]="!loginForm.valid" type="submit">Submit</button>
+          </div>
+    </div>
+   </form>
+  </div>
+
+</div>
+</div>
