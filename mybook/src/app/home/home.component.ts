@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import $ from 'jquery';
+
 
 
 @Component({
@@ -8,11 +8,12 @@ import $ from 'jquery';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
+  isshow:boolean=true;
+ isshow1:boolean=false;
+ isshow2:boolean=false;
+ isshow3:boolean=false;
   constructor() {
-    $(document).ready(function(){
-      $('.modal').modal();
-    });
+  
    }
 
   ngOnInit() {

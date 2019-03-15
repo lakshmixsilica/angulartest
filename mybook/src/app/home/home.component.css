@@ -24,6 +24,10 @@
     color:blueviolet;
     
 }
+.subtxt{
+    /* padding:50%; */
+    margin-left: 20%;
+}
 
 .collection-item:hover{
     background-color: #0c4d6c;
